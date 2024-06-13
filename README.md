@@ -6,3 +6,8 @@ Installation and Uses ->
 2. open the downloaded folder in Intellij idea
 3. run this file - VoteDrop.java
 4. (you can also run the jar file from - out/artifacts/VoteDrop_jar/VoteDrop.jar)
+
+
+
+Common Issues ->
+1. Blurry buttons containing images -> This problem occurs in Windows. While running the app if you find buttons that contain any images that are blurry or not in good quality. That problem can be solved by changing the scale in the Windows display setting.
