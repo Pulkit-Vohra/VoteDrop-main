@@ -6,6 +6,7 @@ Installation and Uses ->
 2. open the downloaded folder in Intellij idea
 3. run this file - VoteDrop.java
 4. (you can also run the jar file from - out/artifacts/VoteDrop_jar/VoteDrop.jar)
+5. 
 
 
 
