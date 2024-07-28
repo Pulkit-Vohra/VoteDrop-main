@@ -2,11 +2,12 @@ VoteDrop is a program that helps you to do full-fledged Voting on any machine th
 
 
 Installation and Uses ->
-1. Clone this repository - "git clone https://github.com/Pulkit-Vohra/VoteDrop-main"
-2. open the downloaded folder in Intellij idea
-3. run this file - VoteDrop.java
-4. (you can also run the jar file from - out/artifacts/VoteDrop_jar/VoteDrop.jar)
-5. 
+1. Download this Project as a ZIP
+2. extract the folder
+3. open the folder in Intellij idea
+4. run this file - VoteDrop.java
+5. (you can also run the jar file from - out/artifacts/VoteDrop_jar/VoteDrop.jar)
+6. 
 
 
 
