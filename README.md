@@ -16,3 +16,25 @@ Common Issues ->
 
 SCREENSHOTS ->
 ![alt text](https://github.com/Pulkit-Vohra/VoteDrop-main/blob/main/screenshots/s1.png)
+
+
+![alt text](https://github.com/Pulkit-Vohra/VoteDrop-main/blob/main/screenshots/s2.png)
+
+
+![alt text](https://github.com/Pulkit-Vohra/VoteDrop-main/blob/main/screenshots/s3.png)
+
+
+![alt text](https://github.com/Pulkit-Vohra/VoteDrop-main/blob/main/screenshots/s4.png)
+
+
+![alt text](https://github.com/Pulkit-Vohra/VoteDrop-main/blob/main/screenshots/s5.png)
+
+
+![alt text](https://github.com/Pulkit-Vohra/VoteDrop-main/blob/main/screenshots/s6.png)
+
+
+![alt text](https://github.com/Pulkit-Vohra/VoteDrop-main/blob/main/screenshots/s7.png)
+
+
+![alt text](https://github.com/Pulkit-Vohra/VoteDrop-main/blob/main/screenshots/s8.png)
+
