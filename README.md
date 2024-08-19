@@ -13,3 +13,6 @@ Installation and Uses ->
 
 Common Issues ->
 1. Blurry buttons containing images -> This problem occurs in Windows. While running the app if you find buttons that contain any images that are blurry or not in good quality. That problem can be solved by changing the scale in the Windows display setting.
+
+SCREENSHOTS ->
+![alt text](https://github.com/Pulkit-Vohra/VoteDrop-main/blob/main/screenshots/s1.png)
