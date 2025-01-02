@@ -8,6 +8,8 @@ public class VoteDrop {
     static int voteofcan5 = 0;
     static int voteofcan6 = 0;
 
+    static int brktime;
+
     static String nmcn1 = "Candidate No. 1";
     static String nmcn2 = "Candidate No. 2";
     static String nmcn3 = "Candidate No. 3";

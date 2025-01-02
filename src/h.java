@@ -5,16 +5,13 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URL;
+
 
 public class h {
     static JFrame hf = new JFrame("VoteDrop - Home");
     public static void hmain() {
 
         Color nsb = new Color(220, 242, 226);
-
-
-
 
 
         Color nblk = new Color(46, 59, 66);
@@ -26,18 +23,19 @@ public class h {
 
         JPanel[] emp = new JPanel[4];
 
-        for(int x = 0; x < emp.length; x++){
-            emp[x] = new JPanel() ;
+        for (int x = 0; x < emp.length; x++) {
+            emp[x] = new JPanel();
             emp[x].setBackground(nblk);
         }
-        ClassLoader classLoader = h.class.getClassLoader();
 
-        ImageIcon dflt = new ImageIcon("src/main/resources/img/default.png");
-        ImageIcon rlbt = new ImageIcon("src/main/resources/img/ds1.png");
-        ImageIcon slbt = new ImageIcon("src/main/resources/img/ds2.png");
-        ImageIcon lg = new ImageIcon("src/main/resources/img/logo.png");
-        ImageIcon lg2 = new ImageIcon("src/main/resources/img/logo2.png");
-        ImageIcon lg3 = new ImageIcon("src/main/resources/img/logo3.png");
+
+        ImageIcon dflt = new ImageIcon(h.class.getClassLoader().getResource("main/resources/img/default.png"));
+        ImageIcon rlbt = new ImageIcon(h.class.getClassLoader().getResource("main/resources/img/ds1.png"));
+        ImageIcon slbt = new ImageIcon(h.class.getClassLoader().getResource("main/resources/img/ds2.png"));
+        ImageIcon lg = new ImageIcon(h.class.getClassLoader().getResource("main/resources/img/logo.png"));
+        ImageIcon lg2 = new ImageIcon(h.class.getClassLoader().getResource("main/resources/img/logo2.png"));
+        ImageIcon lg3 = new ImageIcon(h.class.getClassLoader().getResource("main/resources/img/logo3.png"));
+
 
 
 
@@ -47,7 +45,7 @@ public class h {
         JButton settbt = new JButton("Settings");
         settbt.setBorder(BorderFactory.createEmptyBorder());
 
-        settbt.setBounds(5,100, 190,40);
+        settbt.setBounds(5, 100, 190, 40);
         settbt.setIcon(dflt);
         settbt.setHorizontalAlignment(JButton.CENTER);
         settbt.setHorizontalTextPosition(JButton.CENTER);
@@ -59,7 +57,7 @@ public class h {
         settbt.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                settpg.main();
+                menusett.mnstmain();
                 hf.setVisible(false);
             }
         });
@@ -68,7 +66,7 @@ public class h {
         JButton gitbt = new JButton("Github");
         gitbt.setBorder(BorderFactory.createEmptyBorder());
 
-        gitbt.setBounds(5,150, 190,40);
+        gitbt.setBounds(5, 150, 190, 40);
         gitbt.setIcon(dflt);
         gitbt.setHorizontalAlignment(JButton.CENTER);
         gitbt.setHorizontalTextPosition(JButton.CENTER);
@@ -95,7 +93,6 @@ public class h {
         });
 
 
-
         gitbt.setRolloverIcon(rlbt);
         gitbt.setSelectedIcon(slbt);
         gitbt.setPressedIcon(slbt);
@@ -103,7 +100,7 @@ public class h {
         JButton insbt = new JButton("Instagram");
         insbt.setBorder(BorderFactory.createEmptyBorder());
 
-        insbt.setBounds(5,190, 190,40);
+        insbt.setBounds(5, 190, 190, 40);
         insbt.setIcon(dflt);
         insbt.setHorizontalAlignment(JButton.CENTER);
         insbt.setHorizontalTextPosition(JButton.CENTER);
@@ -135,11 +132,10 @@ public class h {
         });
 
 
-
         JButton rptbt = new JButton("Report Bug");
         rptbt.setBorder(BorderFactory.createEmptyBorder());
 
-        rptbt.setBounds(5,230, 190,40);
+        rptbt.setBounds(5, 230, 190, 40);
         rptbt.setIcon(dflt);
         rptbt.setHorizontalAlignment(JButton.CENTER);
         rptbt.setHorizontalTextPosition(JButton.CENTER);
@@ -173,7 +169,7 @@ public class h {
         JButton abtbt = new JButton("About");
         abtbt.setBorder(BorderFactory.createEmptyBorder());
 
-        abtbt.setBounds(5,270, 190,40);
+        abtbt.setBounds(5, 270, 190, 40);
         abtbt.setIcon(dflt);
         abtbt.setHorizontalAlignment(JButton.CENTER);
         abtbt.setHorizontalTextPosition(JButton.CENTER);
@@ -185,7 +181,7 @@ public class h {
         JLabel vrlbl = new JLabel("Version 1.1");
 
 
-        vrlbl.setBounds(100,530, 190,40);
+        vrlbl.setBounds(100, 530, 190, 40);
         vrlbl.setForeground(Color.RED);
 
 
@@ -215,7 +211,7 @@ public class h {
 
 
         JLabel crdt = new JLabel("By - PV");
-        crdt.setBounds(740,530, 190,40);
+        crdt.setBounds(740, 530, 190, 40);
 
 
         hpnl.add(settbt);
@@ -226,7 +222,10 @@ public class h {
         hpnl.add(vrlbl);
 
 
-        hf.add(hpnl); hf.add(info); hf.add(stbttn); hf.add(crdt);
+        hf.add(hpnl);
+        hf.add(info);
+        hf.add(stbttn);
+        hf.add(crdt);
         hf.setSize(800, 600);
 
         hf.setLayout(null);

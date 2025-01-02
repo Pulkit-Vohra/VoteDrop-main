@@ -1,4 +1,3 @@
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,7 +9,7 @@ public class vpb {
     public static void main(){
         JFrame vpbf = new JFrame("VoteDrop - Verify Password");
 
-        ImageIcon lgf = new ImageIcon("src/main/resources/img/logo.png");
+        ImageIcon lgf = new ImageIcon(vpb.class.getClassLoader().getResource("main/resources/img/logo.png"));
         vpbf.setIconImage(lgf.getImage());
 
         Font abc = new Font("Arial", Font.BOLD, 15);

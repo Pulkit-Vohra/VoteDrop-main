@@ -1,3 +1,4 @@
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -9,11 +10,11 @@ public class vp {
     public static void main(){
         final int[] votercount = {0};
 
-        ImageIcon dfb = new ImageIcon("src/main/resources/img/default.png");
-        ImageIcon bt1 = new ImageIcon("src/main/resources/img/ds1.png");
-        ImageIcon bt2 = new ImageIcon("src/main/resources/img/ds2.png");
+        ImageIcon dfb = new ImageIcon(vp.class.getClassLoader().getResource("main/resources/img/default.png"));
+        ImageIcon bt1 = new ImageIcon(vp.class.getClassLoader().getResource("main/resources/img/ds1.png"));
+        ImageIcon bt2 = new ImageIcon(vp.class.getClassLoader().getResource("main/resources/img/ds2.png"));
 
-        ImageIcon lgf = new ImageIcon("src/main/resources/img/logo.png");
+        ImageIcon lgf = new ImageIcon(vp.class.getClassLoader().getResource("main/resources/img/logo.png"));
         vpf.setIconImage(lgf.getImage());
 
         Color nblk = new Color(220, 242, 226);
@@ -123,7 +124,7 @@ public class vp {
                     @Override
                     protected Void doInBackground() throws Exception {
 
-                        Thread.sleep(5000);// change time as per your flexibility
+                        Thread.sleep(VoteDrop.brktime); // in millisecond
                         return null;
                     }
 
@@ -179,4 +180,3 @@ public class vp {
         vpf.setVisible(true);
     }
 }
-

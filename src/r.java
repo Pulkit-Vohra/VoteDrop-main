@@ -1,3 +1,4 @@
+
 import javax.swing.*;
 import javax.swing.plaf.basic.DefaultMenuLayout;
 import java.awt.*;
@@ -15,7 +16,7 @@ public class r {
 
 
 
-        ImageIcon lgf = new ImageIcon("src/main/resources/img/logo.png");
+        ImageIcon lgf = new ImageIcon(r.class.getClassLoader().getResource("main/resources/img/logo.png"));
         rf.setIconImage(lgf.getImage());
         Color nblk = new Color(220, 242, 226);
         rf.getContentPane().setBackground(nblk);
@@ -48,15 +49,15 @@ public class r {
         shwwnr.setFont(new Font("Arial", Font.PLAIN, 24));
         Color infocol = new Color(100, 119, 217);
         shwwnr.setBounds(280, 30, 250, 40);
-        ImageIcon shwn = new ImageIcon("src/main/resources/img/shwnrbt.jpg");
-        ImageIcon shwn2 = new ImageIcon("src/main/resources/img/shwnrbt2.jpg");
+        ImageIcon shwn = new ImageIcon(r.class.getClassLoader().getResource("main/resources/img/shwnrbt.jpg"));
+        ImageIcon shwn2 = new ImageIcon(r.class.getClassLoader().getResource("main/resources/img/shwnrbt2.jpg"));
         shwwnr.setIcon(shwn);
         shwwnr.setRolloverIcon(shwn2);
         shwwnr.setBorder(null);
         rf.add(shwwnr);
-        ImageIcon pnbg = new ImageIcon("src/main/resources/img/winners.png");
+        ImageIcon pnbg = new ImageIcon(r.class.getClassLoader().getResource("main/resources/img/winners.png"));
 
-        ImagePanel wnnme = new ImagePanel("src/main/resources/img/winners.png");
+        ImagePanel wnnme = new ImagePanel("main/resources/img/winners.png");
 
 
         wnnme.setBounds(100,90,600,300);
@@ -73,8 +74,8 @@ public class r {
 
 
 
-        ImageIcon rltbg = new ImageIcon("src/main/resources/img/result.png");
-        ImagePanel rslt = new ImagePanel("src/main/resources/img/result.png");
+        ImageIcon rltbg = new ImageIcon(r.class.getClassLoader().getResource("main/resources/img/result.png"));
+        ImagePanel rslt = new ImagePanel("main/resources/img/result.png");
 
 
         rslt.setBounds(50, 400,700,250);
@@ -89,10 +90,10 @@ public class r {
         String[] candidatesname = {VoteDrop.nmcn1,VoteDrop.nmcn2, VoteDrop.nmcn3, VoteDrop.nmcn4, VoteDrop.nmcn4, VoteDrop.nmcn5};
         JLabel[] wn1 = new JLabel[6];
 
-       for (int j = 0; j<6; j++){
-           wn1[j] = new JLabel(candidatesname[j]);
+        for (int j = 0; j<6; j++){
+            wn1[j] = new JLabel(candidatesname[j]);
 
-       }
+        }
 
 
 
@@ -118,12 +119,12 @@ public class r {
         int k = 0;
 
 
-            if(rc1 == maxvotes){wnr[k].setText(String.valueOf(VoteDrop.nmcn1)); k++;}
-            if(rc2 == maxvotes){wnr[k].setText(String.valueOf(VoteDrop.nmcn2)); k++; }
-            if(rc3 == maxvotes){wnr[k].setText(String.valueOf(VoteDrop.nmcn3)); k++; }
-            if(rc4 == maxvotes){wnr[k].setText(String.valueOf(VoteDrop.nmcn4)); k++; }
-            if(rc5 == maxvotes){wnr[k].setText(String.valueOf(VoteDrop.nmcn5)); k++; }
-            if(rc6 == maxvotes){wnr[k].setText(String.valueOf(VoteDrop.nmcn6)); k++; }
+        if(rc1 == maxvotes){wnr[k].setText(String.valueOf(VoteDrop.nmcn1)); k++;}
+        if(rc2 == maxvotes){wnr[k].setText(String.valueOf(VoteDrop.nmcn2)); k++; }
+        if(rc3 == maxvotes){wnr[k].setText(String.valueOf(VoteDrop.nmcn3)); k++; }
+        if(rc4 == maxvotes){wnr[k].setText(String.valueOf(VoteDrop.nmcn4)); k++; }
+        if(rc5 == maxvotes){wnr[k].setText(String.valueOf(VoteDrop.nmcn5)); k++; }
+        if(rc6 == maxvotes){wnr[k].setText(String.valueOf(VoteDrop.nmcn6)); k++; }
 
         wnr[0].setBounds(210,15,200,50);
         wnr[1].setBounds(210,50, 200, 50);
@@ -143,7 +144,7 @@ public class r {
 
         for (int l = 0; l == totalnoofcan;){
             if (Objects.equals(wnr[l].getText(), "")){ wnr[l].setVisible(false);}
-          l++;
+            l++;
         }
 
 
@@ -175,7 +176,7 @@ public class r {
             rslt.add(tvote1); rslt.add(tvote2); rslt.add(tvote3); rslt.add(tvote4); rslt.add(tvote5); rslt.add(tvote6);
         }
 
-         rf.add(win1);
+        rf.add(win1);
 
 
         rf.add(rslt);
@@ -200,9 +201,6 @@ public class r {
         }
         return max;
     }
-
-
-
 
 }
 

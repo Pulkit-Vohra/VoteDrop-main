@@ -1,3 +1,5 @@
+
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -6,13 +8,13 @@ import java.awt.event.*;
 public class st {
     public static void main() {
 
-        ImageIcon log = new ImageIcon("src/main/resources/img/logo.png");
+        ImageIcon log = new ImageIcon(st.class.getClassLoader().getResource("main/resources/img/logo.png"));
 
 
 
-        ImageIcon dfb = new ImageIcon("src/main/resources/img/default.png");
-        ImageIcon bt1 = new ImageIcon("src/main/resources/img/ds1.png");
-        ImageIcon bt2 = new ImageIcon("src/main/resources/img/ds2.png");
+        ImageIcon dfb = new ImageIcon(st.class.getClassLoader().getResource("main/resources/img/default.png"));
+        ImageIcon bt1 = new ImageIcon(st.class.getClassLoader().getResource("main/resources/img/ds1.png"));
+        ImageIcon bt2 = new ImageIcon(st.class.getClassLoader().getResource("main/resources/img/ds2.png"));
 
 
         Color nrd = new Color(143, 72, 67);
@@ -35,7 +37,7 @@ public class st {
         passfield[0].setBounds(300,150,150,50);
         passfield[0].setEchoChar('*');
 
-        ImageIcon psh = new ImageIcon("src/main/resources/img/psh.png");
+        ImageIcon psh = new ImageIcon(st.class.getClassLoader().getResource("main/resources/img/psh.png"));
 
 
 
@@ -63,15 +65,15 @@ public class st {
         passhhd.setBounds(460, 155, 40,40);
 
 
-          passhhd.addActionListener(new ActionListener() {
+        passhhd.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               if (passhhd.isSelected()){
-            passfield[0].setEchoChar((char)0);
-        }
-        else {
-            passfield[0].setEchoChar('*');
-        }
+                if (passhhd.isSelected()){
+                    passfield[0].setEchoChar((char)0);
+                }
+                else {
+                    passfield[0].setEchoChar('*');
+                }
             }
         });
 

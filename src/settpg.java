@@ -1,3 +1,5 @@
+
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -9,7 +11,7 @@ public class settpg {
     public static void main(){
 
 
-        ImageIcon lgf = new ImageIcon("src/main/resources/img/logo.png");
+        ImageIcon lgf = new ImageIcon(settpg.class.getClassLoader().getResource("main/resources/img/logo.png"));
         spgfr.setIconImage(lgf.getImage());
 
         Color nblk = new Color(220, 242, 226);
@@ -20,7 +22,7 @@ public class settpg {
 
 
 
-       // spgfr.getContentPane().setBackground(nblk);
+        // spgfr.getContentPane().setBackground(nblk);
 
         JButton edtnme = new JButton("Edit Names");
         edtnme.setBounds(500, 400, 130,30);
@@ -95,7 +97,7 @@ public class settpg {
                     VoteDrop.tocan = 6;
                 }
                 spgfr.setVisible(false);
-                h.vihf();
+                menusett.mnstmain();
 
             }
         });
