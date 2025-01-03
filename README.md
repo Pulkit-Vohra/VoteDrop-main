@@ -1,13 +1,13 @@
-VoteDrop is a program that helps you to do full-fledged Voting on any machine that can run Java. It uses Swing UI. it has many features that make the voting experience much better. 
+VoteDrop is a program that helps you do full-fledged voting on any machine that can run Java. It uses Swing UI. it has many features that make the voting experience much better. 
+
+Version 1.1 updates ->
+1. Now you can edit break time between two voting periods.
+2. GUI updated.
 
 
-Installation and Uses ->
-1. Download this Project as a ZIP
-2. extract the folder
-3. open the folder in Intellij idea
-4. run this file - VoteDrop.java
-5. (you can also run the jar file from - out/artifacts/VoteDrop_jar/VoteDrop.jar)
-
+Installation and Usage ->
+1. Download Java in your system from this link - https://www.oracle.com/in/java/technologies/downloads/
+2. After installing run the Jar file or locate the file directory in the terminal And run this command - "java -jar voteDrop.jar"
 
 
 
